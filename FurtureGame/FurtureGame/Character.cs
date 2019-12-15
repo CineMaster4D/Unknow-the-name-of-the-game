@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace FurtureGame
 {
-    class Character
+    abstract class Character
     {
-        public string Nickname;
-        public int HealthPoint;
+        public string Nickname { get; set; }
+        public int HealtPoint { get; set; }
 
-        public void Display(string Name, int Health)
-        {
-            Console.WriteLine(Name + " " + Health);
-        }
+        public abstract void DisplayInformation();
+        
     }
 }

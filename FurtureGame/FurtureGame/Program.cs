@@ -13,14 +13,15 @@ namespace FurtureGame
             Person person = new Person();
             Bot bot = new Bot();
 
-            person.Nickname = "Anatola";
-            person.HealthPoint = 100;
+            person.Nickname = "Vex";
+            person.HealtPoint = 100;
 
-            bot.Nickname = "Wolf";
-            bot.HealthPoint = 30;
+            bot.Nickname = "WIN.alex";
+            bot.HealtPoint = 30;
 
-            person.Display(person.Nickname, person.HealthPoint);
-            bot.Display(bot.Nickname, bot.HealthPoint);
+            person.DisplayInformation();
+            bot.DisplayInformation();
+            
             Console.ReadLine();
         }
     }

@@ -8,5 +8,9 @@ namespace FurtureGame
 {
     class Bot : Character
     {
+        public override void DisplayInformation()
+        {
+            Console.WriteLine($"Бот: {Nickname} - {HealtPoint}HP");
+        }
     }
 }
