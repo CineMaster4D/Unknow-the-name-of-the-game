@@ -10,18 +10,18 @@ namespace FurtureGame
     {
         static void Main(string[] args)
         {
-            Person person = new Person();
-            Bot bot = new Bot();
+            var person = new Character("Wrigl", 100);
+            var bot = new Character("Wingrada.Frima", 40);
 
-            person.Nickname = "Vex";
-            person.HealtPoint = 100;
+            for(var i = 0; i < 10; i++)
+            {
+                var PossotionPerson = person.Run();
+                Console.WriteLine(PossotionPerson);
 
-            bot.Nickname = "WIN.alex";
-            bot.HealtPoint = 30;
+                var PossotionBot = person.Run();
+                Console.WriteLine(PossotionBot);
+            }
 
-            person.DisplayInformation();
-            bot.DisplayInformation();
-            
             Console.ReadLine();
         }
     }
